@@ -5,6 +5,21 @@
     <title>My test page</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+	<script> 
+		document.addEventListener("DOMContentLoaded", function() {
+		  function createParagraph() {
+			let para = document.createElement('p');
+			para.textContent = 'You clicked the button!';
+			document.body.appendChild(para);
+		  }
+
+		  const buttons = document.querySelectorAll('button');
+
+		  for(let i = 0; i < buttons.length ; i++) {
+			buttons[i].addEventListener('click', createParagraph);
+		  }
+		});
+	</script>
   </head>
   <body>
     <h1>Mozilla is cool</h1>
