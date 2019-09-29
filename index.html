@@ -1,42 +1,72 @@
-<!DOCTYPE html>
+
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-	<script> 
-		document.addEventListener("DOMContentLoaded", function() {
-		  function createParagraph() {
-			let para = document.createElement('p');
-			para.textContent = 'You clicked the button!';
-			document.body.appendChild(para);
-		  }
 
-		  const buttons = document.querySelectorAll('button');
+<head>
+	<title>head title</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="styles/main.css" />
+</head>
 
-		  for(let i = 0; i < buttons.length ; i++) {
-			buttons[i].addEventListener('click', createParagraph);
-		  }
-		});
-	</script>
-  </head>
-  <body>
-    <h1>Mozilla is cool</h1>
-    <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">
+<body class="landing">
+	<<div id="page-wrapper">
 
-    <p>At Mozilla, we’re a global community of</p>
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1>
+				<a href="#banner" class="more scrolly">header h1</a>
+			</h1>
 
-    <ul> <!-- changed to list in the tutorial -->
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
+			<nav id="nav">
+				<ul>
+					<li class="special">
+						<a href="#menu" class="menuToggle">
+							<span>Menu</span>
+						</a>
+						<div id="menu">
+							<ul>
+								<li>
+									l1
+								</li>
+								<li>
+									l2
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
 
-    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+		</header>
 
-    <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
-	<button>Change user</button>
-	<script src="scripts/main.js"></script>
-  </body>
+		<!-- Banner -->
+		<section id="banner">
+			<div class="inner">
+				<h2>aaa</h2>
+				<p>
+					Could that data be any tidier?
+				</p>
+				<p>
+					It is always nice to meet a data enthusiast and a runner, maybe?
+				</p>
+				<!--
+				<ul class="actions">
+					<li>
+						<a href="#" class="button special">Activate</a>
+					</li>
+				</ul>
+				-->
+			</div>
+		</section>
+
+	</div>
+
+</body>
+
 </html>
